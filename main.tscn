@@ -30,3 +30,6 @@ rotation = 1.5708
 
 [node name="MovingBlock" parent="." instance=ExtResource("3_jdhje")]
 position = Vector2(801, 497)
+
+[node name="MovingBlock2" parent="." instance=ExtResource("3_jdhje")]
+position = Vector2(1324, 497)
