@@ -3,7 +3,9 @@ extends CharacterBody2D
 const SPEED := 500
 
 func _physics_process(delta: float) -> void:
-	move_and_collide(velocity * delta)
+	var collision = move_and_collide(velocity * delta)
+	if collision:
+		velocity = Vector2.ZERO
 
 func kick(direction: String) -> void:
 	if direction == "up":
