@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cb4kqsibre1o3" path="res://moving_block.tscn" id="3_jdhje"]
 
 [node name="Node2D" type="Node2D"]
+y_sort_enabled = true
 
 [node name="Background" type="ColorRect" parent="."]
 offset_right = 1920.0

@@ -3,13 +3,13 @@
 [ext_resource type="Script" path="res://player/player.gd" id="1_g3cum"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2im88"]
-size = Vector2(28, 64)
+size = Vector2(28, 32)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wcbc7"]
-size = Vector2(30, 5)
+size = Vector2(26, 3)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1oky3"]
-size = Vector2(5, 30)
+size = Vector2(3, 28)
 
 [node name="Player" type="CharacterBody2D"]
 scale = Vector2(3, 3)
@@ -17,6 +17,7 @@ collision_mask = 2
 script = ExtResource("1_g3cum")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_2im88")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -47,7 +48,7 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShapeLeft" type="CollisionShape2D" parent="AreaLeft"]
-position = Vector2(-16, 14.3333)
+position = Vector2(-14, 14.3333)
 shape = SubResource("RectangleShape2D_1oky3")
 
 [node name="AreaRight" type="Area2D" parent="."]
@@ -55,5 +56,5 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShapeRight" type="CollisionShape2D" parent="AreaRight"]
-position = Vector2(16, 14.3333)
+position = Vector2(14, 14.3333)
 shape = SubResource("RectangleShape2D_1oky3")
