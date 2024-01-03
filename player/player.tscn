@@ -35,11 +35,18 @@ grow_vertical = 2
 size_flags_horizontal = 4
 color = Color(0, 0, 0, 1)
 
+[node name="AreaUp" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaUp"]
+shape = SubResource("RectangleShape2D_wcbc7")
+
 [node name="AreaDown" type="Area2D" parent="."]
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShapeDown" type="CollisionShape2D" parent="AreaDown"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaDown"]
 position = Vector2(0, 32)
 shape = SubResource("RectangleShape2D_wcbc7")
 
@@ -47,7 +54,7 @@ shape = SubResource("RectangleShape2D_wcbc7")
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShapeLeft" type="CollisionShape2D" parent="AreaLeft"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaLeft"]
 position = Vector2(-11, 14.3333)
 shape = SubResource("RectangleShape2D_1oky3")
 
@@ -55,6 +62,6 @@ shape = SubResource("RectangleShape2D_1oky3")
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShapeRight" type="CollisionShape2D" parent="AreaRight"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaRight"]
 position = Vector2(11, 14.3333)
 shape = SubResource("RectangleShape2D_1oky3")

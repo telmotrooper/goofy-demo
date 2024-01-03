@@ -15,6 +15,8 @@ func _physics_process(_delta: float) -> void:
 		moving_block.kick(collision_data[0])
 
 func get_collision_data() -> Array:
+	if $AreaUp.get_overlapping_bodies().size() > 0:
+		return ["up", $AreaUp.get_overlapping_bodies()[0]]
 	if $AreaDown.get_overlapping_bodies().size() > 0:
 		return ["down", $AreaDown.get_overlapping_bodies()[0]]
 	if $AreaLeft.get_overlapping_bodies().size() > 0:
