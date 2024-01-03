@@ -55,7 +55,7 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AreaLeft"]
-position = Vector2(-11, 14.3333)
+position = Vector2(-11, 16)
 shape = SubResource("RectangleShape2D_1oky3")
 
 [node name="AreaRight" type="Area2D" parent="."]
@@ -63,5 +63,5 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AreaRight"]
-position = Vector2(11, 14.3333)
+position = Vector2(11, 16)
 shape = SubResource("RectangleShape2D_1oky3")
