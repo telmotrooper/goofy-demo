@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://caqndti2vjo8x"]
+
+[ext_resource type="PackedScene" uid="uid://d0fhurmofa0n3" path="res://player/player.tscn" id="1_3jkba"]
+[ext_resource type="PackedScene" uid="uid://daf31eawcsb6n" path="res://wall.tscn" id="2_svfny"]
+[ext_resource type="PackedScene" uid="uid://cb4kqsibre1o3" path="res://moving_block.tscn" id="3_jdhje"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.733333, 0.733333, 0.733333, 1)
+
+[node name="Player" parent="." instance=ExtResource("1_3jkba")]
+position = Vector2(339, 262)
+
+[node name="WallTop" parent="." instance=ExtResource("2_svfny")]
+position = Vector2(960, 10)
+
+[node name="WallBottom" parent="." instance=ExtResource("2_svfny")]
+position = Vector2(960, 1070)
+
+[node name="WallLeft" parent="." instance=ExtResource("2_svfny")]
+position = Vector2(10, 960)
+rotation = 1.5708
+
+[node name="WallRight" parent="." instance=ExtResource("2_svfny")]
+position = Vector2(1910, 960)
+rotation = 1.5708
+
+[node name="MovingBlock" parent="." instance=ExtResource("3_jdhje")]
+position = Vector2(801, 497)
