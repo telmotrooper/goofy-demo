@@ -14,6 +14,7 @@ size = Vector2(3, 28)
 [node name="Player" type="CharacterBody2D"]
 scale = Vector2(3, 3)
 collision_mask = 6
+platform_floor_layers = 4294901760
 script = ExtResource("1_g3cum")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -34,6 +35,21 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -31.0
+offset_right = 10.0
+offset_bottom = 31.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+color = Color(0.533333, 0, 0, 1)
 
 [node name="AreaUp" type="Area2D" parent="."]
 collision_layer = 0
