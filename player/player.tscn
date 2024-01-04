@@ -6,10 +6,10 @@
 size = Vector2(22, 32)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wcbc7"]
-size = Vector2(20, 3)
+size = Vector2(12, 3)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1oky3"]
-size = Vector2(3, 28)
+size = Vector2(3, 18)
 
 [node name="Player" type="CharacterBody2D"]
 scale = Vector2(3, 3)
